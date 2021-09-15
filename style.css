@@ -1,0 +1,775 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@font-face {
+  font-family: naikaifont;
+  src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.0/webfont/NaikaiFont-Regular-Lite.woff2) format("woff2"), url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.0/webfont/NaikaiFont-Regular-Lite.woff) format("woff");
+}
+* {
+  font-family: "Balsamiq Sans", "naikaifont";
+  position: relative;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #373D3C;
+  color: #fff;
+}
+
+.scene {
+  width: 390px;
+  height: 558px;
+  border-radius: 15px;
+  background: linear-gradient(#012334, #3F6961, #9BD2C0, #DDD8B2);
+  background-size: 100% 300%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.leftText {
+  margin-left: 35px;
+  margin-top: 170px;
+}
+.leftText h5 {
+  font-size: 0.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+.leftText h1 {
+  letter-spacing: 3px;
+  margin-top: 0;
+  line-height: 25px;
+  font-size: 1.2rem;
+}
+.leftText p {
+  letter-spacing: 1px;
+  opacity: 0.9;
+  font-size: 14px;
+}
+.leftText .dayText {
+  display: none;
+}
+
+.buliding {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.buliding [class^=house] {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.buliding .house1 {
+  width: 139px;
+  height: 94px;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: inset -34px 0 #bdc4b1;
+  z-index: 3;
+}
+.buliding .house1 .bigwindow {
+  width: 43px;
+  height: 39px;
+  border-radius: 0;
+  background-color: #8a763f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.buliding .house1 .bigwindow .window {
+  width: 16px;
+  height: 32px;
+  border-radius: 0;
+  background: linear-gradient(#bdc4b1, #bbb695);
+  margin: 0 2px;
+}
+.buliding .house1 .door {
+  width: 19px;
+  height: 40px;
+  border-radius: 2px 2px 0 0;
+  background-color: #625330;
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+.buliding .house1 .door:before {
+  content: "";
+  display: block;
+  width: 3.5px;
+  height: 3.5px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 2px;
+  top: 20px;
+}
+.buliding .house1 .roof {
+  width: 110px;
+  height: 50px;
+  border-radius: 0;
+  border: 32px solid;
+  border-color: transparent transparent #8a763f transparent;
+  position: absolute;
+  left: -10px;
+  top: -110px;
+}
+.buliding .house1 .roof .shadow {
+  width: 150%;
+  height: 3px;
+  border-radius: 0;
+  background-color: #625330;
+  position: absolute;
+  left: -30px;
+  top: 80px;
+}
+.buliding .house1 .roof:before {
+  content: "";
+  border: 29px solid;
+  border-color: transparent transparent #625330 transparent;
+  position: absolute;
+  top: 45%;
+  right: -28px;
+}
+.buliding .house1:before {
+  content: "";
+  display: block;
+  width: 57px;
+  height: 5px;
+  border-radius: 0;
+  background-color: #bdc4b1;
+  position: absolute;
+  top: 58px;
+  right: 39px;
+}
+.buliding .house2 {
+  width: 152px;
+  height: 159px;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: inset -34px 0 #bdc4b1;
+  right: 125px;
+  z-index: 2;
+}
+.buliding .house2 [class^=window] {
+  width: 14px;
+  height: 25px;
+  border-radius: 0;
+  background: linear-gradient(#bdc4b1, #bbb695);
+  position: absolute;
+}
+.buliding .house2 .window1 {
+  top: 40px;
+  left: 10px;
+}
+.buliding .house2 .window2 {
+  top: 40px;
+  left: 30px;
+}
+.buliding .house2 .window3 {
+  top: 100px;
+  left: 75px;
+}
+.buliding .house2 .window4 {
+  top: 100px;
+  left: 95px;
+}
+.buliding .house2 .line {
+  width: 105%;
+  height: 5px;
+  border-radius: 0;
+  background: linear-gradient(to right, #BDC4B1 78%, #A4A99A 22%);
+  position: absolute;
+  left: -5px;
+  top: 20px;
+}
+.buliding .house3 {
+  width: 168px;
+  height: 283px;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: inset -30px 0 #bdc4b1;
+  z-index: 1;
+}
+.buliding .house3 .windowLine {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+.buliding .house3 .windowLine .window {
+  width: 12px;
+  height: 14px;
+  border-radius: 0;
+  background: linear-gradient(#bdc4b1, #bbb695);
+  margin-left: 12px;
+}
+.buliding .house3 .line {
+  width: 128px;
+  height: 2px;
+  border-radius: 0;
+  background-color: #bdc4b1;
+  margin: 10px 0 10px 3px;
+}
+.buliding .house3 .railingLine {
+  position: absolute;
+  left: 0px;
+  top: -25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buliding .house3 .railingLine .railing {
+  width: 3px;
+  height: 25px;
+  border-radius: 0;
+  background-color: #8a763f;
+  margin: 0 8px;
+}
+.buliding .house3 .railingLine:before {
+  content: "";
+  display: block;
+  width: 165px;
+  height: 3px;
+  border-radius: 0;
+  background-color: #8a763f;
+  position: absolute;
+  left: 2px;
+  top: 8px;
+}
+.buliding .house3 .wall {
+  width: 105px;
+  height: 50px;
+  border-radius: 0;
+  background-color: #fff;
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  box-shadow: inset -19px 0 #CDCEB6;
+  z-index: -1;
+}
+.buliding .house3 .wall .stack {
+  width: 23px;
+  height: 23px;
+  border-radius: 0;
+  background-color: #625330;
+  position: absolute;
+  left: 60px;
+  top: -23px;
+}
+.buliding .house3 .wall .stack:before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 7px;
+  border-radius: 0;
+  background-color: #625330;
+  position: absolute;
+  left: -5px;
+  top: initial;
+}
+
+.allCludes {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.allCludes [class^=clude] {
+  display: flex;
+  align-items: flex-end;
+  width: 100px;
+  height: 32px;
+  border-radius: 0;
+  -webkit-animation: float 16s infinite;
+          animation: float 16s infinite;
+}
+.allCludes .halfball {
+  width: 60px;
+  height: 30px;
+  border-radius: 30px 30px 0 0;
+  background-color: #fff;
+}
+.allCludes .halfba112 {
+  width: 30px;
+  height: 15px;
+  border-radius: 15px 15px 0 0;
+  background-color: #fff;
+  margin-left: -10px;
+}
+.allCludes .tail {
+  width: 85%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  left: inital;
+  top: initial;
+}
+@-webkit-keyframes float {
+  0%, 100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(-50px, 0);
+  }
+  100% {
+    transform: translate(400px, 0);
+  }
+}
+@keyframes float {
+  0%, 100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(-50px, 0);
+  }
+  100% {
+    transform: translate(400px, 0);
+  }
+}
+.allCludes .clude1 {
+  position: absolute;
+  left: 51.4497891751%;
+  top: -1.6731168377%;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+.allCludes .clude2 {
+  position: absolute;
+  left: 17.2716738833%;
+  top: 51.0054461263%;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+.allCludes .clude3 {
+  position: absolute;
+  left: 34.3983496617%;
+  top: -12.3057350689%;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+.allCludes .clude4 {
+  position: absolute;
+  left: 79.647365518%;
+  top: -10.5051835307%;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+.allCludes .clude5 {
+  position: absolute;
+  left: 5.6253332476%;
+  top: 37.2158310568%;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+.allCludes .clude6 {
+  position: absolute;
+  left: 32.1365880025%;
+  top: 22.9639391895%;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+.allCludes .clude7 {
+  position: absolute;
+  left: 53.9661012936%;
+  top: 44.6924663698%;
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+.allCludes .clude8 {
+  position: absolute;
+  left: 98.2962019724%;
+  top: 12.7996001968%;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+.allCludes .clude9 {
+  position: absolute;
+  left: 75.5596333603%;
+  top: 22.7290461628%;
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+}
+.allCludes .clude10 {
+  position: absolute;
+  left: 16.3945108016%;
+  top: -7.0698675296%;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+}
+.allCludes .clude11 {
+  position: absolute;
+  left: 14.1204718451%;
+  top: -18.9821802903%;
+  -webkit-animation-delay: -11s;
+          animation-delay: -11s;
+}
+.allCludes .clude12 {
+  position: absolute;
+  left: 50.8126594311%;
+  top: -0.1819936352%;
+  -webkit-animation-delay: -12s;
+          animation-delay: -12s;
+}
+.allCludes .clude13 {
+  position: absolute;
+  left: 21.5832941966%;
+  top: 16.4720611032%;
+  -webkit-animation-delay: -13s;
+          animation-delay: -13s;
+}
+.allCludes .clude14 {
+  position: absolute;
+  left: 35.7019778438%;
+  top: 32.5522757516%;
+  -webkit-animation-delay: -14s;
+          animation-delay: -14s;
+}
+.allCludes .clude15 {
+  position: absolute;
+  left: 30.1429546639%;
+  top: 31.8063071324%;
+  -webkit-animation-delay: -15s;
+          animation-delay: -15s;
+}
+.allCludes .clude16 {
+  position: absolute;
+  left: 32.1155108762%;
+  top: -9.4430591848%;
+  -webkit-animation-delay: -16s;
+          animation-delay: -16s;
+}
+
+.colorful {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+[class^=ball] {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -webkit-animation: floatball 15s infinite;
+          animation: floatball 15s infinite;
+}
+
+.ball1 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation-delay: -1s;
+          animation-delay: -1s;
+}
+
+.ball2 {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+}
+
+.ball3 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+.ball4 {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #DDA181;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+}
+
+.ball5 {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #DDA181;
+  -webkit-animation-delay: -5s;
+          animation-delay: -5s;
+}
+
+.ball6 {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation-delay: -6s;
+          animation-delay: -6s;
+}
+
+.ball7 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #569A94;
+  -webkit-animation-delay: -7s;
+          animation-delay: -7s;
+}
+
+.ball8 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation-delay: -8s;
+          animation-delay: -8s;
+}
+
+.ball9 {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation-delay: -9s;
+          animation-delay: -9s;
+}
+
+.ball10 {
+  width: -2px;
+  height: -2px;
+  border-radius: 50%;
+  background-color: #569A94;
+  -webkit-animation-delay: -10s;
+          animation-delay: -10s;
+}
+
+.ball11 {
+  width: -5px;
+  height: -5px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation-delay: -11s;
+          animation-delay: -11s;
+}
+
+.ball12 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #DDA181;
+  -webkit-animation-delay: -12s;
+          animation-delay: -12s;
+}
+
+.ball13 {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #569A94;
+  -webkit-animation-delay: -13s;
+          animation-delay: -13s;
+}
+
+.ball14 {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #DDA181;
+  -webkit-animation-delay: -14s;
+          animation-delay: -14s;
+}
+
+.ball15 {
+  width: -3px;
+  height: -3px;
+  border-radius: 50%;
+  background-color: #DDA181;
+  -webkit-animation-delay: -15s;
+          animation-delay: -15s;
+}
+
+.ball16 {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #DDA181;
+  -webkit-animation-delay: -16s;
+          animation-delay: -16s;
+}
+
+.ball17 {
+  width: -3px;
+  height: -3px;
+  border-radius: 50%;
+  background-color: #DDA181;
+  -webkit-animation-delay: -17s;
+          animation-delay: -17s;
+}
+
+.ball18 {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation-delay: -18s;
+          animation-delay: -18s;
+}
+
+.ball19 {
+  width: -1px;
+  height: -1px;
+  border-radius: 50%;
+  background-color: #569A94;
+  -webkit-animation-delay: -19s;
+          animation-delay: -19s;
+}
+
+.ball20 {
+  width: -6px;
+  height: -6px;
+  border-radius: 50%;
+  background-color: #fff;
+  -webkit-animation-delay: -20s;
+          animation-delay: -20s;
+}
+
+@-webkit-keyframes floatball {
+  0%, 100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(-50px, 250px);
+  }
+  100% {
+    transform: translate(550px, -40px);
+  }
+}
+
+@keyframes floatball {
+  0%, 100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translate(-50px, 250px);
+  }
+  100% {
+    transform: translate(550px, -40px);
+  }
+}
+.remind {
+  opacity: 0.5;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  letter-spacing: 1px;
+}
+
+.moon {
+  width: 238px;
+  height: 238px;
+  border-radius: 50%;
+  background-color: #E5DF24;
+  position: absolute;
+  left: 180px;
+  top: 40px;
+  box-shadow: 0px 0px 30px rgba(245, 238, 96, 0.6);
+}
+.moon:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #CAC22A;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+.moon:after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #CAC22A;
+  position: absolute;
+  left: 40px;
+  top: 80px;
+}
+
+.sun {
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(245, 242, 151, 0.3);
+  position: absolute;
+  left: 250px;
+  top: 300px;
+  opacity: 0;
+}
+
+.scene, .moon, .sun, h5, h1, .dayText, .nightText, .allCludes, .buliding {
+  transition: 1s;
+}
+
+input:checked + .scene {
+  background-position: 0 100%;
+}
+input:checked + .scene .nightText {
+  display: none;
+}
+input:checked + .scene .dayText {
+  display: block;
+}
+input:checked + .scene .leftText {
+  color: #231815;
+}
+input:checked + .scene .allCludes {
+  opacity: 0;
+}
+input:checked + .scene .moon {
+  top: -280px;
+  left: 500px;
+}
+input:checked + .scene .sun {
+  top: 40px;
+  opacity: 1;
+}
+input:checked + .scene .colorful {
+  opacity: 1;
+}
+input:checked + .scene .buliding {
+  filter: brightness(110%);
+}
+
+input {
+  display: none;
+}
